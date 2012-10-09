@@ -1,0 +1,13 @@
+a:4:{i:0;s:23:"Invalid backend name []";i:1;s:1293:"#0 /home/gerard/sites/mage/lib/Zend/Cache.php(137): Zend_Cache::throwException('Invalid backend...')
+#1 /home/gerard/sites/mage/lib/Zend/Cache/Backend/TwoLevels.php(135): Zend_Cache::_makeBackend('', Array, true, true)
+#2 /home/gerard/sites/mage/lib/Zend/Cache.php(153): Zend_Cache_Backend_TwoLevels->__construct(Array)
+#3 /home/gerard/sites/mage/lib/Zend/Cache.php(94): Zend_Cache::_makeBackend('TwoLevels', Array, true, true)
+#4 /home/gerard/sites/mage/app/code/core/Mage/Core/Model/Cache.php(124): Zend_Cache::factory('Varien_Cache_Co...', 'TwoLevels', Array, Array, true, true, true)
+#5 /home/gerard/sites/mage/app/code/core/Mage/Core/Model/Config.php(1348): Mage_Core_Model_Cache->__construct(Array)
+#6 /home/gerard/sites/mage/app/Mage.php(462): Mage_Core_Model_Config->getModelInstance('core/cache', Array)
+#7 /home/gerard/sites/mage/app/code/core/Mage/Core/Model/App.php(401): Mage::getModel('core/cache', Array)
+#8 /home/gerard/sites/mage/app/code/core/Mage/Core/Model/App.php(295): Mage_Core_Model_App->_initCache(Array)
+#9 /home/gerard/sites/mage/app/code/core/Mage/Core/Model/App.php(337): Mage_Core_Model_App->baseInit(Array)
+#10 /home/gerard/sites/mage/app/Mage.php(683): Mage_Core_Model_App->run(Array)
+#11 /home/gerard/sites/mage/index.php(87): Mage::run('', 'store')
+#12 {main}";s:3:"url";s:6:"/admin";s:11:"script_name";s:10:"/index.php";}
