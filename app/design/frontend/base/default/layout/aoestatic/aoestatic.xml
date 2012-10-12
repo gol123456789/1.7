@@ -1,0 +1,38 @@
+<layout version="0.1.0">
+
+	<default>
+	
+		<reference name="head">
+			<action method="addJs"><script>aoestatic/jquery-1.6.1.min.js</script></action>
+			<action method="addJs"><script>aoestatic/jquery.cookie.js</script></action>
+			<action method="addJs"><script>aoestatic/common.js</script></action>
+		</reference>
+
+		<reference name="before_body_end">
+			<block type="aoestatic/beforebodyend" template="aoestatic/beforebodyend.phtml"></block>
+		</reference>
+	
+	</default>
+
+	<!-- This layout handle will only be processed if a cacheable controller action is detected (see configuration) -->
+	<!-- If you decide to replace dynamic block only in cacheable actions you can move the content of the default block in this one -->
+	<aoestatic_cacheable>
+              <reference name="right">
+
+            <block type="core/text" name="ph_cart" before="-">
+                <action method="setText"><param><![CDATA[
+                    <div id="cart_sidebar" class="placeholder"                             
+                    rel="cart_sidebar">Placeholder Cart</div>
+                ]]></param></action>
+            </block>
+
+            <action method="unsetChild"><param>cart_sidebar</param></action>
+
+        </reference>
+	</aoestatic_cacheable>
+
+	<!-- This layout handle will only be processed if a not cacheable controller action is detected (see configuration) -->
+	<aoestatic_notcacheable>
+	</aoestatic_notcacheable>
+
+</layout>

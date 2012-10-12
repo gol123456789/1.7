@@ -1,0 +1,45 @@
+a:4:{s:4:"data";s:4476:"<div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
+<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
+onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/catalog/product/widget/new/content/new_grid.phtml">frontend/base/default/template/catalog/product/widget/new/content/new_grid.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
+title="Mage_Catalog_Block_Product_Widget_New">Mage_Catalog_Block_Product_Widget_New</div><div class="widget widget-new-products">
+    <div class="widget-title">
+        <h2>New Products</h2>
+    </div>
+    <div class="widget-products">
+                            <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://www.mage.com/htc-touch-diamond.html?___SID=U" title="HTC Touch Diamond" class="product-image"><img src="http://www.mage.com/media/catalog/product/cache/1/small_image/85x/9df78eab33525d08d6e5fb8d27136e95/h/t/htc-touch-diamond.jpg" width="85" height="85" alt="HTC Touch Diamond" /></a>
+                <h3 class="product-name"><a href="http://www.mage.com/htc-touch-diamond.html?___SID=U" title="HTC Touch Diamond)">HTC Touch Diamond</a></h3>
+                <div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
+<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
+onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/review/helper/summary_short.phtml">frontend/base/default/template/review/helper/summary_short.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
+title="Mage_Review_Block_Helper">Mage_Review_Block_Helper</div></div>                <div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
+<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
+onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/catalog/product/price.phtml">frontend/base/default/template/catalog/product/price.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
+text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
+title="Mage_Catalog_Block_Product_Price">Mage_Catalog_Block_Product_Price</div>
+
+                
+    <div class="price-box">
+                                                            <span class="regular-price" id="product-price-166-widget-new-grid">
+                                            <span class="price">$750.00</span>                                    </span>
+                        
+        </div>
+
+</div>                <div class="actions">
+                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://www.mage.com/checkout/cart/add/uenc/aHR0cDovL3d3dy5tYWdlLmNvbS8,/product/166/?___SID=U')"><span><span>Add to Cart</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://www.mage.com/wishlist/index/add/product/166/?___SID=U" class="link-wishlist">Add to Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://www.mage.com/catalog/product_compare/add/product/166/uenc/aHR0cDovL3d3dy5tYWdlLmNvbS8,/?___SID=U" class="link-compare">Add to Compare</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                    </div>
+</div>
+</div>";s:8:"lifetime";i:86400;s:6:"expire";i:1350167080;s:8:"priority";i:8;}

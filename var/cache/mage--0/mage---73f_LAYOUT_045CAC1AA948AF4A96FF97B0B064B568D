@@ -229,4 +229,4 @@ a:4:{s:4:"data";s:8514:"<block type="adminhtml/page" name="root" output="toHtml"
 <reference name="content">
    <block type="moneybookers/jsinit" name="moneybookers_jsinit" template="moneybookers/jsinit.phtml"/>
 </reference>
-";s:8:"lifetime";N;s:6:"expire";i:11349778256;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350079907;s:8:"priority";i:8;}
