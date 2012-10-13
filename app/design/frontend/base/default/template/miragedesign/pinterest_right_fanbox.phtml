@@ -1,0 +1,52 @@
+<?php
+/**
+ * Miragedesign Web Development
+ *
+ * @category    Miragedesign
+ * @package     Miragedesign_Pinterest
+ * @copyright   Copyright (c) 2011 Mirage Design (http://miragedesign.net)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */ 
+?>
+<?php if ($this->getIsFanboxEnabled()) :?>
+<?php if ($this->getFanboxPosition() == 2):?>
+	<?php
+	$thumbnailWidth = $this->getFollowerThumbnailWidth();
+	$thumbnailHeight = $this->getFollowerThumbnailHeight();
+		
+	$data = $this->getFollowersOf();
+	$objFollowers = json_decode($data);
+	$userData = $this->getUserInfo();
+	$userInfo = json_decode($userData);
+	$arrFollowers = $objFollowers->people;
+
+	if (count($arrFollowers)) {
+		?>
+		<div class="block pin-fanbox">
+			<div class="block-title follower-title"><strong><?php echo $this->getFanboxTitle(); ?></strong></div>
+		<?php
+			$i = 0;
+			 
+			foreach ($arrFollowers as $follower) {				
+				if ($i >= $this->getFollowerMaximumNumber()) break;
+				
+				$followerImage = $follower->image_url;
+?>
+			<div class="follower-wrap <?php if (!($i%3)) :?>new-line<?php endif;?>">
+				<a title="<?php echo $follower->full_name; ?>" target="_blank" href="<?php echo $this->getUserUrl($follower->username); ?>"><img src="<?php echo $followerImage; ?>" alt="<?php echo $follower->full_name; ?>" style="width:<?php echo $thumbnailWidth; ?>px; height=<?php echo $thumbnailHeight; ?>px" /></a>
+			</div>
+		
+<?php 	
+				$i++;		
+			}
+			?>
+		<div class="follower-total"><strong><?php echo $userInfo->user->stats->followers_count;?></strong>&nbsp;<span>followers</span></div>
+	<?php if ($this->getIsPinterestButtonEnabled()) : ?>
+		<div class="follower-footer"><a target="_blank" href="<?php echo $this->getUserUrl(); ?>"><img src="<?php echo $this->getSkinUrl($this->getPinterestImageSrc()); ?>" alt="<?php echo $this->getPinterestImageAlt(); ?>" /></a></div>
+	<?php endif; ?>							
+		</div>
+		<?php 			
+	}	
+?>
+<?php endif; ?>
+<?php endif; ?>

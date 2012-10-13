@@ -1,0 +1,48 @@
+.pin-feed {
+	float:left;
+	width:100%;	
+}
+.pin-feed .pin-title strong {
+	padding-left:21px;
+	background: url(../../images/miragedesign/pinterest/feed-icon.png) 0 0 no-repeat;
+}
+.pin-feed .pin-wrap {
+	clear:both;
+}
+.pin-feed .pin-wrap .pin-image {
+	float:left;
+	margin: 5px;
+}
+.pin-feed .pin-wrap .pin-image {
+	border: 1px solid #ccc;
+}
+.pin-feed .pin-wrap .pin-desc {
+	float:right;
+	margin-top:2px;
+	width: 106px;
+}
+.pin-feed .pin-footer {
+	clear: both;
+	border-top: 1px solid #CCC;
+	text-align: center;
+	padding: 5px 0;
+}
+.pin-fanbox {
+	float:left;	
+	width:100%;
+}
+.pin-fanbox .pin-title strong {
+	padding-left:21px;
+	background: url(../../images/miragedesign/pinterest/feed-icon.png) 0 0 no-repeat;
+}
+.pin-fanbox .follower-total {
+    margin: 5px 10px 5px 10px;
+}
+.pin-fanbox .follower-wrap {float:left;margin:8px 6px 6px 6px;}
+.pin-fanbox .new-line {margin-left:10px; clear:both;} 
+.pin-fanbox .follower-footer {
+	clear: both;
+	border-top: 1px solid #CCC;
+	text-align: center;
+	padding: 5px 0;
+}

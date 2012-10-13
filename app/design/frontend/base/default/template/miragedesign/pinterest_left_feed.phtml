@@ -1,0 +1,49 @@
+<?php
+/**
+ * Miragedesign Web Development
+ *
+ * @category    Miragedesign
+ * @package     Miragedesign_Pinterest
+ * @copyright   Copyright (c) 2011 Mirage Design (http://miragedesign.net)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */ 
+?>
+<?php if ($this->getIsFeedEnabled()) :?>
+<?php if ($this->getFeedsPosition() == 1):?>
+<?php	
+	$thumbnailWidth = $this->getPinThumbnailWidth();
+	$thumbnailHeight = $this->getPinThumbnailHeight();
+
+	/*Get the current product count on Pinterest*/
+	$data = $this->getRecentFeeds();
+	$objPin = json_decode($data);
+	$arrPins = $objPin->pins;
+	
+	if (count($arrPins)) {
+		?>
+		<div class="block pin-feed">
+			<div class="block-title pin-title"><strong><?php echo $this->getFeedsTitle(); ?></strong></div>
+		<?php 
+		foreach ($arrPins as $pin) {
+			$pinImage = $pin->images;
+			?>
+			<div class="pin-wrap">
+				<div class="pin-image">		
+					<a target="_blank" href="<?php echo $this->getPinUrl($pin->id); ?>"><img src="<?php echo $pinImage->thumbnail; ?>" alt="<?php echo $pin->description; ?>" style="width:<?php echo $thumbnailWidth?>px; height=<?php echo $thumbnailHeight; ?>px" /></a>
+				</div>
+				<div class="pin-desc">
+					<?php echo $pin->description; ?>
+				</div>
+			</div>
+			<?php 
+		}
+		?>
+		<?php if ($this->getIsPinterestButtonEnabled()) : ?>
+			<div class="pin-footer"><a target="_blank" href="<?php echo $this->getUserUrl(); ?>"><img src="<?php echo $this->getSkinUrl($this->getPinterestImageSrc()); ?>" alt="<?php echo $this->getPinterestImageAlt(); ?>" /></a></div>
+		<?php endif; ?>
+		</div>
+		<?php 		
+	}
+?>
+<?php endif; ?>
+<?php endif; ?>

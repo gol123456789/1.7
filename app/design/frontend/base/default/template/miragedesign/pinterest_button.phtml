@@ -1,0 +1,148 @@
+<?php
+/**
+ * Miragedesign Web Development
+ *
+ * @category    Miragedesign
+ * @package     Miragedesign_Pinterest
+ * @copyright   Copyright (c) 2011 Mirage Design (http://miragedesign.net)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */ 
+?>
+<?php if ($this->getIsEnabled() && !$this->getIsVerticalScrollbarEnabled()) :?>
+<?php	
+	$productUrl = $this->getProductUrl();
+	$productImage = $this->getProductImage();
+	$productDescription = $this->getProductDescription();
+	
+	/*Get the current product count on Pinterest*/
+	$pinterestCount = $this->getPinterestCount();
+?>
+<a href="http://pinterest.com/pin/create/button/?url=<?php echo $productUrl; ?>&media=<?php echo $productImage; ?>&description=<?php echo $productDescription; ?>" class="pin-it-button" count-layout="<?php echo $pinterestCount; ?>"><?php echo $this->helper('pinterest')->__('Pin It'); ?></a>
+<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+
+<?php if ($pinterestCount == 'horizontal' || $pinterestCount == 'none') :?>
+
+<?php if ($this->checkTwitterIsEnabled()) :?>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $productUrl ?>" <?php if ($this->getTwitterDataVia()) :?>data-via="<?php echo $this->getTwitterDataVia(); ?>"<?php endif; ?>>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<?php endif; ?>
+
+<?php if ($this->checkGooglePlusIsEnabled()) :?>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone size="medium" href="<?php echo $productUrl; ?>"></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<?php endif; ?>
+
+<?php if ($this->checkFacebookIsEnabled()) :?>
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId  : <?php echo Mage::getStoreConfig('miragedesign_pinterest/other_social_config/facebook_app_api'); ?>,
+      status : true,
+      cookie : true,
+      xfbml  : true
+    });
+};
+// Load the SDK Asynchronously
+(function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+ }(document));
+</script>
+
+<div class="fb-like" data-href="<?php echo $productUrl; ?>" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+<?php endif; ?>
+
+<?php if ($this->checkLinkedInIsEnabled()) :?>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-counter="right"></script>
+<?php endif; ?>
+
+<?php if ($this->checkDiggIsEnabled()) :?>
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+<a class="DiggThisButton DiggCompact"></a>
+<?php endif; ?>
+
+<?php elseif ($pinterestCount == 'vertical') :?>
+
+<?php if ($this->checkFacebookIsEnabled()) :?>
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId  : <?php echo Mage::getStoreConfig('miragedesign_pinterest/other_social_config/facebook_app_api'); ?>,
+      status : true,
+      cookie : true,
+      xfbml  : true
+    });
+};
+// Load the SDK Asynchronously
+(function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+ }(document));
+ </script>
+
+<div class="fb-like" data-href="<?php echo $productUrl ?>" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>	
+<?php endif; ?>
+
+<?php if ($this->checkTwitterIsEnabled()) :?>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $productUrl ?>" data-via="Pinteresttuto" data-count="vertical">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<?php endif; ?>
+
+<?php if ($this->checkGooglePlusIsEnabled()) :?>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone size="tall" href="<?php echo $productUrl; ?>"></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<?php endif; ?>
+
+<?php if ($this->checkLinkedInIsEnabled()) :?>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-counter="top"></script>
+<?php endif; ?>
+
+<?php if ($this->checkDiggIsEnabled()) :?>
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+<a class="DiggThisButton DiggMedium"></a>
+<?php endif; ?>
+
+<?php endif; ?>
+<?php endif; ?>

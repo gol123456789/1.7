@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<pinterest module="pinterest">
+		<title>Pinterest</title>
+		<sort_order>71</sort_order>
+		<children>
+			<item module="pinterest">
+				<title>Configuration</title>
+				<sort_order>30</sort_order>
+				<action>adminhtml/system_config/edit/section/miragedesign_pinterest</action>
+			</item>			
+		</children>
+		</pinterest>
+	</menu>	
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <pinterest translate="title" module="pinterest">
+                    	<title>Pinterest</title>
+                        <children>
+							<item translate="title" module="pinterest">
+								<title>Configuration</title>
+								<sort_order>20</sort_order>
+							</item>			                            
+                        </children>
+                    </pinterest>
+					<system>
+						<children>
+							<config>
+								<children>
+									<miragedesign_pinterest>
+										<title>Miragedesign Pinterest</title>
+									</miragedesign_pinterest>
+								</children>
+							</config>
+						</children>
+					</system>                                        
+                </children>
+            </admin>
+        </resources>
+    </acl>			
+</config>

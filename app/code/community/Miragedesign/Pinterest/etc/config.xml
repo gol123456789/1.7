@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Miragedesign_Pinterest>
+			<version>1.1.4</version>
+		</Miragedesign_Pinterest>
+	</modules>
+	<frontend>
+		<layout>
+			<updates>
+				<pinterest>
+					<file>miragedesign/pinterest.xml</file>
+				</pinterest>
+			</updates>
+		</layout>
+        <translate>
+			<modules>
+				<miragedesign_pinterest>
+					<files>
+						<default>Miragedesign_Pinterest.csv</default>
+					</files>
+				</miragedesign_pinterest>
+			</modules>
+		</translate>		
+	</frontend>	
+	<global>
+		<blocks>
+			<pinterest>
+				<class>Miragedesign_Pinterest_Block</class>
+			</pinterest>
+		</blocks>
+		<helpers>
+			<pinterest>
+				<class>Miragedesign_Pinterest_Helper</class>
+			</pinterest>
+		</helpers>
+		<models>
+			<pinterest>
+				<class>Miragedesign_Pinterest_Model</class>
+			</pinterest>
+		</models>
+	</global>
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<miragedesign_pinterest>
+											<title>Pinterest Configuration</title>
+										</miragedesign_pinterest>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+	<default>
+		<miragedesign_pinterest>
+			<configuration>
+				<pinterest_image_size>300</pinterest_image_size>
+				<pinterest_price_decision>2</pinterest_price_decision>
+			</configuration>
+			<feeds_option>
+				<feeds_title>Pinterest Feeds</feeds_title>
+				<pinterest_pins_number>5</pinterest_pins_number>
+				<pinterest_thumbnail_width>75</pinterest_thumbnail_width>
+				<pinterest_thumbnail_height>75</pinterest_thumbnail_height>
+				<pinterest_follow_button>images/miragedesign/pinterest/follow-on-pinterest-button.png</pinterest_follow_button>
+				<pinterest_button_alt>Pinterest Follow Image</pinterest_button_alt>
+			</feeds_option>
+			<fanbox_option>
+				<fanbox_title>Pinterest Fanbox</fanbox_title>
+				<pinterest_followers_number>12</pinterest_followers_number>
+				<pinterest_thumbnail_width>48</pinterest_thumbnail_width>
+				<pinterest_thumbnail_height>48</pinterest_thumbnail_height>
+				<pinterest_follow_button>images/miragedesign/pinterest/follow-on-pinterest-button.png</pinterest_follow_button>
+				<pinterest_button_alt>Pinterest Follow Image</pinterest_button_alt>
+			</fanbox_option>									
+<!--			<other_social_config>-->
+<!--				<pinterest_twitter_account>Pinteresttuto</pinterest_twitter_account>			-->
+<!--			</other_social_config>-->
+		</miragedesign_pinterest>
+	</default>
+</config>

@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <pinterest translate="label" module="pinterest">
+            <label>Miragedesign</label>
+            <sort_order>100</sort_order>
+        </pinterest>
+    </tabs> 
+    <sections>
+        <miragedesign_pinterest translate="label" module="pinterest">
+            <label>Pinterest Configuration</label>
+            <tab>pinterest</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <configuration translate="label" module="pinterest">
+                    <label>Pinterest Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <pinterest_enabled translate="label" module="pinterest">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pinterest_enabled>					
+						<pinterest_count translate="label" module="pinterest">
+							<label>Pin Count</label>
+							<frontend_type>select</frontend_type>
+							<source_model>pinterest/pincount</source_model>   
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+							<comment>Choose the layout Pin It will be, then other social network buttons will base on it too</comment>
+						</pinterest_count>
+						<pinterest_image_size translate="label" module="pinterest">						
+                            <label>Product Image Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The height of the image will vary based on the width</comment>         
+						</pinterest_image_size>
+						<pinterest_price_decision translate="label" module="pinterest">						
+                            <label>Price Decision</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How many decimal places for product prices</comment>         
+						</pinterest_price_decision>															
+                        <pinterest_price translate="label" module="pinterest">
+                            <label>Price in Pinterest Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>pinterest/price</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pinterest_price>
+					</fields> 					
+                </configuration>
+                <other_social_config translate="label" module="pinterest">
+                    <label>Pinterest Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <facebook_enabled translate="label" module="pinterest">
+                            <label>Enable Facebook</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_enabled>
+                        <facebook_app_api translate="label" module="pinterest">
+                            <label>Facebook App API</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[ Get a <a target="_blank" href="http://www.facebook.com/developers/createapp.php">Facebook API Key</a>]]></comment>
+                        </facebook_app_api>
+                        <facebook_admin_id translate="label" module="pinterest">
+                            <label>Facebook Admin ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[ Get your <a target="_blank" href="http://www.facebook.com/insights/">Facebook Admin ID</a> (<a href="http://www.facebook.com/help/search/?q=insights" target="_blank">More Info</a>)]]></comment>
+                        </facebook_admin_id>                                                					
+                        <twitter_enabled translate="label" module="pinterest">
+                            <label>Enable Twitter</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </twitter_enabled>		
+						<pinterest_twitter_account translate="label" module="pinterest">						
+                            <label>Twitter Data Via</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Put your Twitter name here</comment>
+						</pinterest_twitter_account>                        															
+                        <google_plus_enabled translate="label" module="pinterest">
+                            <label>Enable Google+</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </google_plus_enabled>
+                        <linkedin_enabled translate="label" module="pinterest">
+                            <label>Enable LinkedIn</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </linkedin_enabled>                        					
+                        <digg_enabled translate="label" module="pinterest">
+                            <label>Enable Digg</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </digg_enabled>                                                					                        
+					</fields> 					
+                </other_social_config>
+                <layout_option translate="label" module="pinterest">
+                    <label>Layout Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <vertical_scrollbar translate="label" module="pinterest">
+                            <label>Vertical Scrollbar</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable this option to get the vertical scrollbar layout for social network buttons</comment>
+                        </vertical_scrollbar>					
+					</fields> 					
+                </layout_option>
+                <feeds_option translate="label" module="pinterest">
+                    <label>Feeds Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <enable_feeds translate="label" module="pinterest">
+                            <label>Enable Feeds</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable this option to get the feeds from Pinterest</comment>
+                        </enable_feeds>
+						<feeds_title translate="label" module="pinterest">
+							<label>Feeds Title</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+							<comment>The title of the block feeds</comment>
+						</feeds_title>                        	                       
+						<feeds_position translate="label" module="pinterest">
+							<label>Feeds Position</label>
+							<frontend_type>select</frontend_type>
+							<source_model>pinterest/feedposition</source_model>   
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+							<comment></comment>
+						</feeds_position>
+						<pinterest_username translate="label" module="pinterest">						
+                            <label>Pinterest Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Put your Pinterest Username here, if it is blank, then we will use latest popular pins</comment>                           
+						</pinterest_username>	
+						<pinterest_board_slug translate="label" module="pinterest">						
+                            <label>Pinterest Board Slug</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If it is blank, we will use latest pins of Pinterest Username</comment>                           
+						</pinterest_board_slug>	
+						<pinterest_pins_number translate="label" module="pinterest">						
+                            <label>Pins Maximum Number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The maximum number of pins to display</comment>                           
+						</pinterest_pins_number>	
+						<pinterest_thumbnail_width translate="label" module="pinterest">						
+                            <label>Pin's thumbnail width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The number that will set the width in pixels of the Pin's thumbnail</comment>                           
+						</pinterest_thumbnail_width>																								   					                        				
+						<pinterest_thumbnail_height translate="label" module="pinterest">						
+                            <label>Pin's Thumbnail height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The number that will set the height in pixels of the Pin's thumbnail</comment>                           
+						</pinterest_thumbnail_height>	
+						<pinterest_button_enable translate="label" module="pinterest">						
+                            <label>Enable Pinterest Follow Button</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_button_enable>							
+						<pinterest_follow_button translate="label" module="pinterest">						
+                            <label>Pinterest Follow Image Src</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_follow_button>	
+						<pinterest_button_alt translate="label" module="pinterest">						
+                            <label>Pinterest Follow Image Alt</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_button_alt>							
+					</fields> 					
+                </feeds_option>   
+                <fanbox_option translate="label" module="pinterest">
+                    <label>Fanbox Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <enable_fanbox translate="label" module="pinterest">
+                            <label>Enable Fanbox</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable this option to get the followers from Pinterest</comment>
+                        </enable_fanbox>
+						<fanbox_title translate="label" module="pinterest">
+							<label>Fanbox Title</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+							<comment>The title of the block fanbox</comment>
+						</fanbox_title>                        	                       
+						<fanbox_position translate="label" module="pinterest">
+							<label>Fanbox Position</label>
+							<frontend_type>select</frontend_type>
+							<source_model>pinterest/feedposition</source_model>   
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>                    
+							<comment></comment>
+						</fanbox_position>
+						<pinterest_username translate="label" module="pinterest">						
+                            <label>Pinterest Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Put your Pinterest Username here, if it is blank, then we will not display the Fanbox block</comment>                           
+						</pinterest_username>	
+						<pinterest_followers_number translate="label" module="pinterest">						
+                            <label>Followers Maximum Number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The maximum number of followers to display in Fanbox</comment>                           
+						</pinterest_followers_number>	
+						<pinterest_thumbnail_width translate="label" module="pinterest">						
+                            <label>Follower's thumbnail width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The number that will set the width in pixels of the Follower's thumbnail</comment>                           
+						</pinterest_thumbnail_width>																								   					                        				
+						<pinterest_thumbnail_height translate="label" module="pinterest">						
+                            <label>Follower's Thumbnail height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The number that will set the height in pixels of the Follower's thumbnail</comment>                           
+						</pinterest_thumbnail_height>	
+						<pinterest_button_enable translate="label" module="pinterest">						
+                            <label>Enable Pinterest Follow Button</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_button_enable>							
+						<pinterest_follow_button translate="label" module="pinterest">						
+                            <label>Pinterest Follow Image Src</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_follow_button>	
+						<pinterest_button_alt translate="label" module="pinterest">						
+                            <label>Pinterest Follow Image Alt</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pinterest_button_alt>							
+					</fields> 					
+                </fanbox_option>                                                                  
+                <author_information translate="label">
+                    <label>Author</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>&lt;a href="http://miragedesign.net"&gt;MirageDesign.net&lt;/a&gt; Best Magento extensions for you! Please contact us at &lt;a href="mailto:contacts@miragedesign.net"&gt;contacts@miragedesign.net&lt;/a&gt; if you have any question or problem.</comment>
+                </author_information>                
+            </groups>			
+        </miragedesign_pinterest>
+    </sections> 
+</config>

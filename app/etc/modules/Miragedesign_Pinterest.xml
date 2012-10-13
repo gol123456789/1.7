@@ -1,0 +1,9 @@
+<?xml version="1.0"?> 
+<config>
+    <modules>
+        <Miragedesign_Pinterest>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Miragedesign_Pinterest>
+    </modules>
+</config>
