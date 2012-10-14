@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:14963:"<block name="formkey" type="core/template" template="core/formkey.phtml"/>
+a:4:{s:4:"data";s:17062:"<block name="formkey" type="core/template" template="core/formkey.phtml"/>
 <label>All Pages</label>
 <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
    <block type="page/html_head" name="head" as="head">
@@ -358,6 +358,52 @@ a:4:{s:4:"data";s:14963:"<block name="formkey" type="core/template" template="co
 <reference name="right">
    <block type="facebookfree/active" name="fb.activity" template="facebookfree/activity.phtml"/>
 </reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js_css</type>
+      <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addItem" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+      <type>skin_css</type>
+      <name>css/miragedesign/pinterest.css</name>
+      <params/>
+   </action>
+</reference>
+<reference name="left">
+   <block type="pinterest/feed" name="pinterest_left_feed" before="left.permanent.callout">
+      <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+         <template>miragedesign/pinterest_left_feed.phtml</template>
+      </action>
+   </block>
+   <block type="pinterest/fanbox" name="pinterest_left_fanbox" before="left.permanent.callout">
+      <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+         <template>miragedesign/pinterest_left_fanbox.phtml</template>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="pinterest/feed" name="pinterest_right_feed" template="miragedesign/pinterest_right_feed.phtml" before="right.permanent.callout">
+      <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+         <template>miragedesign/pinterest_right_feed.phtml</template>
+      </action>
+   </block>
+   <block type="pinterest/fanbox" name="pinterest_right_fanbox" before="right.permanent.callout">
+      <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+         <template>miragedesign/pinterest_right_fanbox.phtml</template>
+      </action>
+   </block>
+</reference>
 <reference name="top.links">
    <action method="addLink" translate="label title" module="customer">
       <label>Log In</label>
@@ -372,4 +418,4 @@ a:4:{s:4:"data";s:14963:"<block name="formkey" type="core/template" template="co
 <reference name="right">
    <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
 </reference>
-";s:8:"lifetime";N;s:6:"expire";i:11350080680;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350207607;s:8:"priority";i:8;}

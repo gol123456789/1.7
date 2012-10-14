@@ -1,38 +1,18 @@
-a:4:{s:4:"data";s:4543:"<div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
-<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
-onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/page/html/footer.phtml">frontend/base/default/template/page/html/footer.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
-title="Mage_Page_Block_Html_Footer">Mage_Page_Block_Html_Footer</div><div class="footer-container">
+a:4:{s:4:"data";s:1447:"<div class="footer-container">
     <div class="footer">
-        <div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
-<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
-onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/page/switch/stores.phtml">frontend/base/default/template/page/switch/stores.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
-title="Mage_Page_Block_Switch">Mage_Page_Block_Switch</div></div><ul>
+        <ul>
 <li><a href="http://www.mage.com/about-magento-demo-store?___SID=U">About Us</a></li>
 <li><a href="http://www.mage.com/customer-service?___SID=U">Customer Service</a></li>
 <li class="last privacy"><a href="http://www.mage.com/privacy-policy-cookie-restriction-mode?___SID=U">Privacy Policy</a></li>
-</ul><div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
-<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
-onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/page/template/links.phtml">frontend/base/default/template/page/template/links.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
-title="Mage_Page_Block_Template_Links">Mage_Page_Block_Template_Links</div><ul class="links">
+</ul><ul class="links">
                         <li class="first" ><a href="http://www.mage.com/catalog/seo_sitemap/category/?___SID=U" title="Site Map" >Site Map</a></li>
                                 <li ><a href="http://www.mage.com/catalogsearch/term/popular/?___SID=U" title="Search Terms" >Search Terms</a></li>
                                 <li ><a href="http://www.mage.com/catalogsearch/advanced/?___SID=U" title="Advanced Search" >Advanced Search</a></li>
-                                <div style="position:relative; border:1px dotted red; margin:6px 2px; padding:18px 2px 2px 2px; zoom:1;">
-<div style="position:absolute; left:0; top:0; padding:2px 5px; background:red; color:white; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'"
-onmouseout="this.style.zIndex='998'" title="frontend/base/default/template/page/template/linksblock.phtml">frontend/base/default/template/page/template/linksblock.phtml</div><div style="position:absolute; right:0; top:0; padding:2px 5px; background:red; color:blue; font:normal 11px Arial;
-text-align:left !important; z-index:998;" onmouseover="this.style.zIndex='999'" onmouseout="this.style.zIndex='998'"
-title="Mage_Sales_Block_Guest_Links">Mage_Sales_Block_Guest_Links</div><li ><a href="http://www.mage.com/sales/guest/form/?___SID=U" title="Orders and Returns" >Orders and Returns</a></li>
-</div>                                <li class=" last" ><a href="http://www.mage.com/contacts/?___SID=U" title="Contact Us" >Contact Us</a></li>
+                                <li ><a href="http://www.mage.com/sales/guest/form/?___SID=U" title="Orders and Returns" >Orders and Returns</a></li>
+                                <li class=" last" ><a href="http://www.mage.com/contacts/?___SID=U" title="Contact Us" >Contact Us</a></li>
             </ul>
-</div>        <p class="bugs">Help Us to Keep Magento Healthy - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>Report All Bugs</strong></a> (ver. 1.7.0.2)</p>
+        <p class="bugs">Help Us to Keep Magento Healthy - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>Report All Bugs</strong></a> (ver. 1.7.0.2)</p>
         <address>&copy; 2012 Magento Demo Store. All Rights Reserved.</address>
     </div>
 </div>
-</div>";s:8:"lifetime";i:7200;s:6:"expire";i:1350087880;s:8:"priority";i:8;}
+";s:8:"lifetime";i:7200;s:6:"expire";i:1350246164;s:8:"priority";i:8;}

@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:161859:"<?xml version="1.0"?>
+a:4:{s:4:"data";s:162477:"<?xml version="1.0"?>
 <layouts><adminhtml_permissions_user_edit>
    <reference name="left">
       <block type="adminhtml/permissions_user_edit_tabs" name="adminhtml.permissions.user.edit.tabs"/>
@@ -3359,6 +3359,23 @@ a:4:{s:4:"data";s:161859:"<?xml version="1.0"?>
       </block>
    </block>
 </adminhtml_mobile_previewproductinfo>
+<default>
+   <reference name="head">
+      <action method="addItem">
+         <type>js_css</type>
+         <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+      </action>
+      <action method="addJs">
+         <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+      </action>
+   </reference>
+   <reference name="before_body_end">
+      <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+   </reference>
+</default>
 <adminhtml_system_config_edit>
    <reference name="content">
       <block type="moneybookers/jsinit" name="moneybookers_jsinit" template="moneybookers/jsinit.phtml"/>
@@ -3370,4 +3387,4 @@ a:4:{s:4:"data";s:161859:"<?xml version="1.0"?>
    </reference>
 </adminhtml_cache_index>
 </layouts>
-";s:8:"lifetime";N;s:6:"expire";i:11350136179;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350204652;s:8:"priority";i:8;}

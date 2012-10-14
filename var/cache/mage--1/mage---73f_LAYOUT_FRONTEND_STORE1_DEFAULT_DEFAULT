@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:220927:"<?xml version="1.0"?>
+a:4:{s:4:"data";s:223886:"<?xml version="1.0"?>
 <layouts><default>
    <block name="formkey" type="core/template" template="core/formkey.phtml"/>
 </default>
@@ -5164,6 +5164,71 @@ a:4:{s:4:"data";s:220927:"<?xml version="1.0"?>
       </block>
    </reference>
 </checkout_onepage_index>
+<default>
+   <reference name="head">
+      <action method="addItem">
+         <type>js_css</type>
+         <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+      </action>
+      <action method="addJs">
+         <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+      </action>
+   </reference>
+   <reference name="before_body_end">
+      <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+   </reference>
+</default>
+<catalog_product_view>
+   <reference name="head">
+      <block type="pinterest/base" name="md_pinterest_meta">
+         <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+            <template>miragedesign/head.phtml</template>
+         </action>
+      </block>
+   </reference>
+   <reference name="product.info.extrahint">
+      <block type="pinterest/button" name="pinterest_button" template="miragedesign/pinterest_button.phtml"/>
+   </reference>
+   <reference name="before_body_end">
+      <block type="pinterest/button" name="pinterest_panel" template="miragedesign/pinterest_panel.phtml"/>
+   </reference>
+</catalog_product_view>
+<default>
+   <reference name="head">
+      <action method="addItem" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+         <type>skin_css</type>
+         <name>css/miragedesign/pinterest.css</name>
+         <params/>
+      </action>
+   </reference>
+   <reference name="left">
+      <block type="pinterest/feed" name="pinterest_left_feed" before="left.permanent.callout">
+         <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+            <template>miragedesign/pinterest_left_feed.phtml</template>
+         </action>
+      </block>
+      <block type="pinterest/fanbox" name="pinterest_left_fanbox" before="left.permanent.callout">
+         <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+            <template>miragedesign/pinterest_left_fanbox.phtml</template>
+         </action>
+      </block>
+   </reference>
+   <reference name="right">
+      <block type="pinterest/feed" name="pinterest_right_feed" template="miragedesign/pinterest_right_feed.phtml" before="right.permanent.callout">
+         <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+            <template>miragedesign/pinterest_right_feed.phtml</template>
+         </action>
+      </block>
+      <block type="pinterest/fanbox" name="pinterest_right_fanbox" before="right.permanent.callout">
+         <action method="setTemplate" ifconfig="miragedesign_pinterest/configuration/pinterest_enabled">
+            <template>miragedesign/pinterest_right_fanbox.phtml</template>
+         </action>
+      </block>
+   </reference>
+</default>
 <moneybookers_processing_payment>
    <reference name="root">
       <action method="setTemplate">
@@ -5185,4 +5250,4 @@ a:4:{s:4:"data";s:220927:"<?xml version="1.0"?>
    </reference>
 </moneybookers_processing_placeform>
 </layouts>
-";s:8:"lifetime";N;s:6:"expire";i:11350080679;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350204659;s:8:"priority";i:8;}

@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:8514:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
+a:4:{s:4:"data";s:9066:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
    <block type="adminhtml/page_head" name="head" as="head" template="page/head.phtml">
       <action method="setTitle" translate="title">
          <title>Magento Admin</title>
@@ -223,10 +223,25 @@ a:4:{s:4:"data";s:8514:"<block type="adminhtml/page" name="root" output="toHtml"
       <name>xmlconnect/boxes.css</name>
    </action>
 </reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js_css</type>
+      <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+</reference>
 <reference name="left">
    <block type="adminhtml/system_config_switcher" name="adminhtml.system.config.switcher" before="-"/>
 </reference>
 <reference name="content">
    <block type="moneybookers/jsinit" name="moneybookers_jsinit" template="moneybookers/jsinit.phtml"/>
 </reference>
-";s:8:"lifetime";N;s:6:"expire";i:11350136204;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350205785;s:8:"priority";i:8;}

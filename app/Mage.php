@@ -221,6 +221,7 @@ final class Mage
             }
             self::throwException('Mage registry key "'.$key.'" already exists');
         }
+       
         self::$_registry[$key] = $value;
     }
 

@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:22228:"
+a:4:{s:4:"data";s:22790:"
 <div class="nav-bar">
 <!-- menu start -->
 <ul id="nav">
@@ -135,6 +135,14 @@ a:4:{s:4:"data";s:22228:"
 <li  class="  last level1"> <a href="http://www.mage.com/index.php/admin/poll/index/key/$poll/index$/"   class=""><span>Polls</span></a>
 </li>
 </ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Pinterest</span></a>
+<ul >
+<li  class="  last level1"> <a href="http://www.mage.com/index.php/admin/system_config/edit/section/miragedesign_pinterest/key/$system_config/edit$/"   class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level0"> <a href="http://www.mage.com/index.php/admin/mgt/index/key/$mgt/index$/"   class=""><span>Mgt-Commerce.com</span></a>
 </li>
 <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Reports</span></a>
 <ul >
@@ -305,4 +313,4 @@ a:4:{s:4:"data";s:22228:"
     <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
 
 </div>
-";s:8:"lifetime";i:86400;s:6:"expire";i:1350222605;s:8:"priority";i:8;}
+";s:8:"lifetime";i:86400;s:6:"expire";i:1350292188;s:8:"priority";i:8;}

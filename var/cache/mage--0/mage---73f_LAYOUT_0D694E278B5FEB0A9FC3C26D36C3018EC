@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:8564:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
+a:4:{s:4:"data";s:9116:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
    <block type="adminhtml/page_head" name="head" as="head" template="page/head.phtml">
       <action method="setTitle" translate="title">
          <title>Magento Admin</title>
@@ -223,6 +223,21 @@ a:4:{s:4:"data";s:8564:"<block type="adminhtml/page" name="root" output="toHtml"
       <name>xmlconnect/boxes.css</name>
    </action>
 </reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js_css</type>
+      <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+</reference>
 <reference name="content">
    <block type="adminhtml/dashboard" name="dashboard">
       <block type="adminhtml/store_switcher" name="store_switcher" as="store_switcher" template="store/switcher.phtml">
@@ -232,4 +247,4 @@ a:4:{s:4:"data";s:8564:"<block type="adminhtml/page" name="root" output="toHtml"
       </block>
    </block>
 </reference>
-";s:8:"lifetime";N;s:6:"expire";i:11350136179;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350205514;s:8:"priority";i:8;}

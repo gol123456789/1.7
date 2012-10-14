@@ -38,6 +38,20 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga_debug.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+    document.observe("dom:loaded", function() {
+    window.onload = function(){
+        
+        
+      elm = document.getElementById('PinItButton');  
+      
+          console.log(elm);
+          
+      
+     
+  };
+        }
+    
+    );
 
 //]]>
 </script>

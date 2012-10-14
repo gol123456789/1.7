@@ -1,4 +1,4 @@
-a:4:{s:4:"data";s:8811:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
+a:4:{s:4:"data";s:9363:"<block type="adminhtml/page" name="root" output="toHtml" template="page.phtml">
    <block type="adminhtml/page_head" name="head" as="head" template="page/head.phtml">
       <action method="setTitle" translate="title">
          <title>Magento Admin</title>
@@ -223,6 +223,21 @@ a:4:{s:4:"data";s:8811:"<block type="adminhtml/page" name="root" output="toHtml"
       <name>xmlconnect/boxes.css</name>
    </action>
 </reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js_css</type>
+      <name>mgt_developertoolbar/mgt_developertoolbar.css</name>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/jquery-1.7.2.min.js</script>
+   </action>
+   <action method="addJs">
+      <script>mgt_developertoolbar/mgt_developertoolbar.js</script>
+   </action>
+</reference>
+<reference name="before_body_end">
+   <block type="mgt_developertoolbar/toolbar" name="mgt_developertoolbar" template="mgt_developertoolbar/toolbar.phtml"/>
+</reference>
 <reference name="content">
    <block type="adminhtml/cache" name="cache"/>
    <block type="adminhtml/cache_additional" name="cache.additional" template="system/cache/additional.phtml"/>
@@ -233,4 +248,4 @@ a:4:{s:4:"data";s:8811:"<block type="adminhtml/page" name="root" output="toHtml"
 <reference name="content">
    <block type="varnishcache/adminhtml_cache_additional" name="varnish.cache.additional" template="varnishcache/cache/additional.phtml" after="cache.additional"/>
 </reference>
-";s:8:"lifetime";N;s:6:"expire";i:11350079870;s:8:"priority";i:8;}
+";s:8:"lifetime";N;s:6:"expire";i:11350204652;s:8:"priority";i:8;}
